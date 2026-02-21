@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-API_URL = "http://localhost:8010"  # change this to EC2 IP when deployed
+API_URL = st.secrets['API_URL']  # change this to EC2 IP when deployed
 
 st.set_page_config(page_title="Agentic RAG Chatbot", page_icon="🦜")
 st.title("🦜 Agentic RAG Chatbot")
